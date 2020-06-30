@@ -1,0 +1,44 @@
+{% extends 'FoodyApp/home.html' %}
+
+{% block heading %}
+About Us
+{% endblock%}
+
+{% block content %}
+{% load static %}
+ <section class="section pt-5 top-slant-white2 relative-higher">
+      <div class="container">
+        <div class="row mb-5 justify-content-center" data-aos="fade">
+            <div class="col-md-7 text-center heading-wrap">
+              <h2 data-aos="fade-up">The Restaurant</h2>
+              <p data-aos="fade-up" data-aos-delay="100">Foody is the one of the popular leading tasty and yummy food restaurant in Kerala. Our Food not only attractive but also make tasty for every aging customers. We pick our ingredients with the uttermost care and use only the freshest and natural constituents which are then cooked according to our Healthy and Clean Policy so as to provide you with the most nutritious food. 
+
+            </p>
+            </div>
+          </div>
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-4">
+            <img src="{% static 'img/kadai.jpg' %}" alt="Free website template by Free-Template.co" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="200">
+          </div>
+          <div class="col-lg-4">
+            <img src="{% static 'img/about_1.jpg' %}" alt="Free website template by Free-Template.co" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="300">
+            <img src="{% static 'img/about_2.jpg' %}" alt="Free website template by Free-Template.co" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="400">
+          </div>
+          <div class="col-lg-4">
+            <img src="{% static 'img/Chicken.jpg' %}" alt="Free website template by Free-Template.co" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="500">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 ml-auto">
+            <p>Hence you remain Healthy without ever having to make a compromise on Taste. With the rich experience of more than 5 years, we offer the cleanest and best quality delicious food products produced using the most modern technology to suits the contemporary taste.</p>
+          </div>
+          <div class="col-md-6 ml-auto">
+            <p>Quick service, freshly cooked food, the best in quality and tasty food is our mantra. With an extensive menu of breakfast, lunch, and dinner favorites, we have something for everyone. Keeping in mind the health of our consumers, we prepare food items in clean environment. This has enabled us to gain maximum customer satisfaction. With an efficient and hardworking workforce, we provide our customers with the supreme quality food products..</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    {% endblock %}

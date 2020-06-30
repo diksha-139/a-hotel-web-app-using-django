@@ -1,0 +1,28 @@
+{% extends 'FoodyApp/home.html' %}
+{% block heading %}
+Reserve
+{% endblock heading %}
+{% block content %}
+<section class="section  pt-5 top-slant-white2 relative-higher bottom-slant-gray">
+      
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+            <h1>Reserve a seat for you....</h1>
+          <form action="" method="POST">
+              {% csrf_token %}
+            <table>
+              <tr>
+              <th>{{form.label_tag}}</th>
+              <td>{{form}}</td>
+              </tr>
+
+            </table>
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <button type="submit" class="btn btn-primary">Submit </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        {% endblock %}

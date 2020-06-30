@@ -1,0 +1,199 @@
+{% extends 'FoodyApp/home.html' %}
+    {% block heading %}
+        Our Recipies
+    {% endblock heading %}
+
+    {% block content %}
+        {% load static %}
+        <section class="section ">
+
+            <div class="clearfix mb-5 pb-5">
+                <div class="container-fluid mb-5">
+                    <div class="row" data-aos="fade">
+                        <div class="col-md-12 text-center heading-wrap">
+                            <h2>Special Menu</h2>
+                        </div>
+                    </div>
+                </div>
+            <div class="owl-carousel centernonloop">
+                <a href="{% url 'recipes' %}" class="item-dishes" data-aos="fade-right" data-aos-delay="100">
+                    <div class="text">
+                        <p class="dishes-price">RS.110.50</p>
+                        <h2 class="dishes-heading">Kadahi Paneer</h2>
+                    </div>
+                    <img src="{% static 'img/kadai.jpg' %}"  class="img-fluid">
+                </a>
+                    <a href="{% url 'recipes' %}" class="item-dishes" data-aos="fade-right" data-aos-delay="200">
+            <div class="text">
+                    <p class="dishes-price">Rs.120.00</p>
+                    <h2 class="dishes-heading">Hyderabadi biryani</h2>
+            </div>
+                <img src="{% static 'img/biryani.jpg' %}"  class="img-fluid">
+                    </a>
+                    <a href="{% url 'recipes' %}" class="item-dishes" data-aos="fade-right" data-aos-delay="300">
+                        <div class="text">
+                            <p class="dishes-price">Rs.115.00</p>
+                                <h2 class="dishes-heading">Aloo Matar Curry</h2>
+                        </div>
+                        <img src="{% static 'img/aloo.jpg' %}" alt="" class="img-fluid">
+                    </a>
+                    <a href="{% url 'recipes' %}" class="item-dishes" data-aos="fade-right" data-aos-delay="400">
+                        <div class="text">
+                            <p class="dishes-price">Rs.120.00</p>
+                            <h2 class="dishes-heading">Special Thaali</h2>
+                        </div>
+                        <img src="{% static 'img/thali1.jpg' %}" alt="" class="img-fluid">
+                    </a>
+            </div>
+    </div>
+
+    </section> <!-- .section -->
+
+        <section class="section bg-light  top-slant-white bottom-slant-gray">
+
+            <div class="clearfix mb-5 pb-5">
+                <div class="container-fluid">
+                    <div class="row" data-aos="fade">
+                        <div class="col-md-12 text-center heading-wrap">
+                            <h2>Our Menu</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="container">
+
+            <div class="row no-gutters">
+                <div class="col-md-6">
+                    <div class="sched d-block d-lg-flex">
+                        <div class="bg-image order-3" style="background-image: url({% static 'img/egg1.jpg' %});"
+                            data-aos="fade"></div>
+                                <div class="text order-1">
+                                <h3>Egg Curry</h3>
+
+                        <p class="text-primary h3">Rs. 100.00</p>
+                    </div>
+
+                </div>
+
+                <div class="sched d-block d-lg-flex">
+                    <div class="bg-image order-3" style="background-image: url({% static 'img/franky.jpg' %});"
+                        data-aos="fade"></div>
+                    <div class="text">
+                        <h3>Franky Roll</h3>
+
+                        <p class="text-primary h3">Rs.120.00</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="sched d-block d-lg-flex">
+                    <div class="bg-image order-3" style="background-image: url({% static 'img/shawarma.jpg' %});"
+                        data-aos="fade"></div>
+                    <div class="text order-1">
+                        <h3>Shawarma</h3>
+
+                        <p class="text-primary h3">Rs.180.00</p>
+
+                    </div>
+
+                </div>
+
+                <div class="sched d-block d-lg-flex">
+                    <div class="bg-image order-3" style="background-image: url({% static 'img/kadai.jpg' %});"
+                        data-aos="fade"></div>
+                    <div class="text">
+                        <h3>Kadahi Paneer Masala</h3>
+
+                        <p class="text-primary h3">Rs.160.00</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        
+
+        <div class="row no-gutters">
+            <div class="col-md-6">
+                <div class="sched d-block d-lg-flex">
+                    <div class="bg-image order-3" style= "background-image: url({% static 'img/img4.jpg' %});"
+                        data-aos="fade"></div>
+                    <div class="text order-1">
+                        <h3>chettinad chicken curry</h3>
+
+                        <p class="text-primary h3">Rs.220.00</p>
+                    </div>
+
+                </div>
+
+                <div class="sched d-block d-lg-flex">
+                    <div class="bg-image order-3" style="background-image: url({% static 'img/porotta.jpg' %});"
+                        data-aos="fade"></div>
+                    <div class="text">
+                        <h3>Lachcha Porotta</h3>
+
+                        <p class="text-primary h3">Rs.20.00 per pcs.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="sched d-block d-lg-flex">
+                    <div class="bg-image order-3" style="background-image: url({% static 'img/dishes_2.jpg' %});"
+                        data-aos="fade"></div>
+                    <div class="text order-1">
+                        <h3>Bacon wrapped wild gulf prawns</h3>
+
+                        <p class="text-primary h3">Rs.300.00</p>
+
+                    </div>
+
+                </div>
+
+                <div class="sched d-block d-lg-flex">
+                    <div class="bg-image order-3" style="background-image: url({% static 'img/dal.jpg' %})"
+                        data-aos="fade"></div>
+                    <div class="text order-1">
+                        <h3>Dal Makhani</h3>
+
+                        <p class="text-primary h3">Rs.160.00</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <div class="col-md-6">
+                <div class="sched d-block d-lg-flex">
+                    <div class="bg-image order-3" style="background-image: url({% static 'img/biryani.jpg' %});"
+                        data-aos="fade"></div>
+                    <div class="text ">
+                        <h3>Chicken Biryani</h3>
+
+                        <p class="text-primary h3">Rs.300.00</p>
+
+                    </div>
+                        </div>
+               
+                    </div>
+
+                   
+            </div>
+
+             </div>
+
+
+            </div>
+        </section>
+
+{% endblock %}

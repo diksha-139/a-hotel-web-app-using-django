@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Registration form</title>
+
+    <!-- Icons font CSS-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+<!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+    <link href="{% static 'vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/font-awesome-4.7/css/font-awesome.min.css' %}" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="{% static 'vendor/select2/select2.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/datepicker/daterangepicker.css' %}" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-red p-t-180 p-b-100 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Register Here !!!</h2>
+                    <form method="POST" action="">
+                        {% csrf_token %}
+                        <div class="input-group">
+                            <label for="name">Name</label>
+                            <input class="input--style-2" type="text" placeholder="Name" id="name" name="name">
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Contact Number</label>
+                            <input class="input--style-2" type="text" placeholder="Mobile" id="phone" name="phone">
+                        </div>
+                        <div class="input-group">
+                            <label for="address">Address</label>
+                            <input class="input--style-2" type="text" placeholder="Address" id="address" name="address">
+                        </div>
+                        <div class="form-group"> <!-- Date input -->
+                            <label class="control-label" for="date">Date</label>
+                            <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                          </div>
+                          <div class="form-group"> <!-- Submit button -->
+                            <button class="btn btn-primary " name="submit" type="submit">Submit</button>
+                          </div>
+                        <div class="input-group">
+                            <label for="guests">Number of Guests</label>
+                            <input class="input--style-2" type="number" placeholder="Number of Guests" id="guests" name="guests">
+                        </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                    
+                                        <select class="mdb-select md-form colorful-select dropdown-danger" id="orders" name="orders" multiple>
+                                            <option value="" disabled selected>Choose your Dishes</option>
+                                            <option value="1">Shawarma</option>
+                                            <option value="2">Dosa</option>
+                                            <option value="3">Special thaali</option>
+                                            <option value="3">Chicken biryani</option>
+                                            <option value="3">Kadahi Paneer</option>
+                                          </select>
+                                          <label class="mdb-main-label" for="orders">List of recipies served</label>
+                                          <button class="btn-save btn btn-danger btn-sm">Save</button>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label for="password">Password</label>
+                                    <input class="input--style-2" type="password" placeholder="Password" name="password" id="password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-t-30">
+                            <button class="btn btn--radius btn--green" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <!-- Vendor JS-->
+    <script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+    <script src="{% static 'vendor/datepicker/moment.min.js' %}"></script>
+    <script src="{% static 'vendor/datepicker/daterangepicker.js' %}"></script>
+    <script src="{% static 'js/option.js' %}"></script>
+    <script src="{% static 'js/time.js' %}"></script>
+
+    <!-- Main JS-->
+    <script src="{% static 'js/global.js' %}"></script>
+
+</body>
+</html>
+<!-- end document-->
